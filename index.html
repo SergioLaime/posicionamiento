@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>🔥♈🔥</title>
+    <link href="https://fonts.googleapis.com/css?family=Hind+Madurai" rel="stylesheet">
+    <link rel="stylesheet" href="styles.min.css">
+</head>
+<body>
+    <div id="app">
+        <div class="pos-header">
+            <h1>{{titulo.title1}}</h1>
+            <img src="faceXD.png" alt="">
+        </div>
+        <div class="pos-form">
+            <div class="pos-form__rub">
+                <label for="rubro">Rubro</label>
+                <input type="text" id="rubro" v-model="rubro">
+            </div>
+            <div class="pos-form__esp">
+                <label for="especializada">Especializada</label>
+                <input type="text" id="especializada" v-model="especializada">
+            </div>
+        </div>
+        <div class="pos-links">
+            <a :href="`https://www.google.com/search?q=${rubro}+gnb+Bolivia`" target="blank">{{rubro}} gnb Bolivia</a>
+            <a :href="`https://www.google.com/search?q=${rubro}+amarillas+Bolivia`" target="blank">{{rubro}} amarillas Bolivia</a>
+            <a :href="`https://www.google.com/search?q=${rubro}+${especializada}+Bolivia`" target="blank">{{rubro}} {{especializada}} Bolivia</a>
+
+            <a :href="`https://www.google.com/search?q=${rubro}+gnb+La+Paz`" target="blank">{{rubro}} gnb La Paz</a>
+            <a :href="`https://www.google.com/search?q=${rubro}+amarillas+La+Paz`" target="blank">{{rubro}} amarillas La Paz</a>
+            <a :href="`https://www.google.com/search?q=${rubro}+${especializada}+La+Paz`" target="blank">{{rubro}} {{especializada}} La Paz</a>
+
+            <a :href="`https://www.google.com/search?q=${rubro}+gnb+Cochabamba`" target="blank">{{rubro}} gnb Cochabamba</a>
+            <a :href="`https://www.google.com/search?q=${rubro}+amarillas+Cochabamba`" target="blank">{{rubro}} amarillas Cochabamba</a>
+            <a :href="`https://www.google.com/search?q=${rubro}+${especializada}+Cochabamba`" target="blank">{{rubro}} {{especializada}} Cochabamba</a>
+
+            <a :href="`https://www.google.com/search?q=${rubro}+gnb+Santa+Cruz`" target="blank">{{rubro}} gnb Santa Cruz</a>
+            <a :href="`https://www.google.com/search?q=${rubro}+amarillas+Santa+Cruz`" target="blank">{{rubro}} amarillas Santa Cruz</a>
+            <a :href="`https://www.google.com/search?q=${rubro}+${especializada}+Santa+Cruz`" target="blank">{{rubro}} {{especializada}} Santa Cruz</a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
